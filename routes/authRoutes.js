@@ -6,9 +6,15 @@ const User = mongoose.model("User");
 
 module.exports = (app) => {
   /* test route for heroku */
-  // app.get("/", (req, res) => {
-  //   res.send("hi");
-  // }),
+  app.get("/", (req, res) => {
+    res.send("hi");
+  });
+
+  /* test route for heroku */
+  app.get("/api/g", (req, res) => {
+    res.send("g");
+  });
+
   app.post(
     "/api/login",
     passport.authenticate("local", {
@@ -17,7 +23,7 @@ module.exports = (app) => {
       // successRedirect: "/app",
     }),
     (req, res) => {
-      console.log(req.user);
+      log(req.user);
       res.send("logged in!");
     }
   );
