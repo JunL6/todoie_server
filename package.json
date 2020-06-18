@@ -8,6 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
   },
+  "engines": {
+    "npm": "6.14.5",
+    "node": "12.16.2"
+  },
+  "h": "h",
   "author": "",
   "license": "ISC",
   "dependencies": {

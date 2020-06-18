@@ -5,18 +5,22 @@ const log = require("../utils/logging");
 const User = mongoose.model("User");
 
 module.exports = (app) => {
-  app.post(
-    "/api/login",
-    passport.authenticate("local", {
-      failureFlash: true,
-      // failureRedirect: "/",
-      // successRedirect: "/app",
-    }),
-    (req, res) => {
-      console.log(req.user);
-      res.send("logged in!");
-    }
-  );
+  /* test route for heroku */
+  app.get("/", (req, res) => {
+    res.send("hi");
+  }),
+    app.post(
+      "/api/login",
+      passport.authenticate("local", {
+        failureFlash: true,
+        // failureRedirect: "/",
+        // successRedirect: "/app",
+      }),
+      (req, res) => {
+        console.log(req.user);
+        res.send("logged in!");
+      }
+    );
 
   app.post("/api/signup", (req, res, next) => {
     const { username, password } = req.body;
