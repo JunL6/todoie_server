@@ -3,7 +3,7 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cookieSession = require("cookie-session");
-// const cors = require("cors");
+const cors = require("cors");
 const flash = require("connect-flash");
 const keys = require("./config/keys");
 const log = require("./utils/logging");
@@ -43,6 +43,7 @@ app.use(passport.session());
 
 /* cors */
 // app.use(cors({ credentials: true, origin: `http://localhost:3001` }));
+app.use(cors());
 
 /* route handling */
 require("./routes/authRoutes")(app);
