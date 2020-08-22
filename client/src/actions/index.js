@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 import {
   ADD_TODOITEM,
@@ -14,6 +15,8 @@ import { URL_FETCH_USER } from "../config/urls";
 let nextTodoId = 0;
 let nextGroupId = 1;
 
+let history = useHistory();
+
 export function fetchUser() {
   return (dispatch) => {
     axios
@@ -21,6 +24,8 @@ export function fetchUser() {
       .then((response) => {
         console.log(response);
         dispatch({ type: FETCH_USER, payload: response.data.username });
+
+        history.push("/app");
       })
       .catch((err) => console.error(err));
   };
