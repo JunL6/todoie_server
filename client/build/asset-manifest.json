@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/todolist_app/static/css/main.179fa7ee.chunk.css",
+    "main.js": "/todolist_app/static/js/main.d8741fb8.chunk.js",
+    "main.js.map": "/todolist_app/static/js/main.d8741fb8.chunk.js.map",
+    "runtime-main.js": "/todolist_app/static/js/runtime-main.04fe9bef.js",
+    "runtime-main.js.map": "/todolist_app/static/js/runtime-main.04fe9bef.js.map",
+    "static/js/2.2fcfedcf.chunk.js": "/todolist_app/static/js/2.2fcfedcf.chunk.js",
+    "static/js/2.2fcfedcf.chunk.js.map": "/todolist_app/static/js/2.2fcfedcf.chunk.js.map",
+    "index.html": "/todolist_app/index.html",
+    "precache-manifest.b510fbebe8f6b2e4046696b39194569b.js": "/todolist_app/precache-manifest.b510fbebe8f6b2e4046696b39194569b.js",
+    "service-worker.js": "/todolist_app/service-worker.js",
+    "static/css/main.179fa7ee.chunk.css.map": "/todolist_app/static/css/main.179fa7ee.chunk.css.map",
+    "static/js/2.2fcfedcf.chunk.js.LICENSE.txt": "/todolist_app/static/js/2.2fcfedcf.chunk.js.LICENSE.txt",
+    "static/media/Todoie_logo.svg": "/todolist_app/static/media/Todoie_logo.6a235456.svg",
+    "static/media/LandingPage.css": "/todolist_app/static/media/landingpage-background.cb7b7a58.jpg",
+    "static/media/logo.svg": "/todolist_app/static/media/logo.183dc3a6.svg",
+    "static/media/App.css": "/todolist_app/static/media/todolist_item--incomplete.74254da3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04fe9bef.js",
+    "static/js/2.2fcfedcf.chunk.js",
+    "static/css/main.179fa7ee.chunk.css",
+    "static/js/main.d8741fb8.chunk.js"
+  ]
+}

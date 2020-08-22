@@ -1,0 +1,17 @@
+.group-selector {
+  color: grey;
+  z-index: 999;
+  position: relative;
+}
+
+.item {
+  background-color: #2e3338;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.item-selected {
+  background-color: black;
+}
