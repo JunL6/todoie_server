@@ -21,8 +21,8 @@ export default function GroupSelector(props) {
   /* */
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   /* I am not sure if I should move this useEffect logic to Main.js */
   useEffect(() => {
@@ -61,7 +61,6 @@ export default function GroupSelector(props) {
 
     closeModal();
     setGroupNameInput("");
-    // this.setState({ isModalOpen: false, groupNameInput: "" });
   }
 
   function renderGroupList(groupList, currentGroupId) {
@@ -71,7 +70,7 @@ export default function GroupSelector(props) {
           key={group._id}
           className={classNames("item", {
             "item-selected": group._id === currentGroupId,
-            "text-primary": group._id === currentGroupId,
+            "text-light": group._id === currentGroupId,
           })}
           onClick={() => {
             setSelectedGroupId(group._id);
@@ -106,29 +105,6 @@ export default function GroupSelector(props) {
         onGroupNameInputChange={onGroupNameInputChange}
         onAddNewGroup={onAddNewGroup}
       />
-
-      {/* <Modal
-        isOpen={isModalOpen}
-        onRequestClose={closeModal}
-        overlayClassName="modal-overlay"
-        className="modal-content"
-      >
-        <div>
-          <header>
-            <h3>Add Group</h3>
-            <button onClick={closeModal}>x</button>
-          </header>
-          <form onSubmit={onAddNewGroup}>
-            <label>Group Name: </label>
-            <input onChange={onGroupNameInputChange} type="text"></input>
-          </form>
-          <footer>
-            <Button variant="light" onClick={onAddNewGroup}>
-              Add
-            </Button>
-          </footer>
-        </div>
-      </Modal> */}
     </div>
   );
 }

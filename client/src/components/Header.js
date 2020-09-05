@@ -6,13 +6,7 @@ import "./Header.css";
 
 function Header(props) {
   const currentURL = props.history.location.pathname;
-  if (
-    currentURL === "/login" ||
-    currentURL === "/signup" ||
-    currentURL === "/app"
-  )
-    return <></>;
-  else
+  if (currentURL === "/")
     return (
       <Navbar className="header transparent" expand="lg">
         <LinkContainer
@@ -22,7 +16,7 @@ function Header(props) {
           <Navbar.Brand className="mr-auto">Todoie</Navbar.Brand>
         </LinkContainer>
         <LinkContainer to="/login">
-          <Button variant="light" className="mr-2">
+          <Button variant="outline-light" className="mr-2">
             Log in
           </Button>
         </LinkContainer>
@@ -33,6 +27,7 @@ function Header(props) {
         </LinkContainer>
       </Navbar>
     );
+  else return <></>;
 }
 
 const mapStateToProps = (state) => ({

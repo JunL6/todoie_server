@@ -13,6 +13,8 @@ import Sidebar from "./Sidebar/Sidebar";
 
 export default function Main(props) {
   const [userData, setUserData] = useState(null);
+
+  // ${count} is used to
   const [count, setCount] = useState(0);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 

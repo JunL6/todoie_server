@@ -60,23 +60,8 @@ function Signup(props) {
   }
 
   return (
-    // <div>
-    //   <Link to="/">Todoie</Link>
-    //   <div>Sign up</div>
-    //   <form onSubmit={handleSubmit(this.onFormSubmit)}>
-    //     <fieldset>
-    //       <label>Email:</label>
-    //       <Field name="username" component="input" type="text" />
-    //     </fieldset>
-    //     <fieldset>
-    //       <label>Password: </label>
-    //       <Field name="password" component="input" type="password" />
-    //     </fieldset>
-    //     <button>Sign up</button>
-    //   </form>
-    //   <div>todo: error message</div>
-    // </div>
-    <div className="auth bg-light">
+    <div className="auth">
+      <div className="background"></div>
       <Container fluid>
         <Row className="pt-5 justify-content-center align-items-center">
           <Link to="/" className="d-flex align-items-end logo-link">
@@ -85,7 +70,7 @@ function Signup(props) {
           </Link>
         </Row>
         <Row className="my-4 justify-content-center">
-          <Col className="auth-form-container pt-3 pb-4 px-4 border rounded">
+          <Col className="auth-form-container pt-3 pb-4 px-4 border rounded bg-light">
             <Form
               //  validated={validated}
               onSubmit={handleSubmit}

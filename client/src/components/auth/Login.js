@@ -51,7 +51,8 @@ function Login(props) {
   };
 
   return (
-    <div className="auth bg-light">
+    <div className="auth">
+      <div className="background"></div>
       <Container fluid>
         <Row className="pt-5 justify-content-center align-items-center">
           <Link to="/" className="d-flex align-items-end logo-link">
@@ -60,7 +61,7 @@ function Login(props) {
           </Link>
         </Row>
         <Row className="my-4 justify-content-center">
-          <Col className="auth-form-container pt-3 pb-4 px-4 border rounded">
+          <Col className="auth-form-container pt-3 pb-4 px-4 border rounded bg-light">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <h3 className="text-center text-secondary">Log in</h3>
               <Form.Group controlId="formBasicEmail">

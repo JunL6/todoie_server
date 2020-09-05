@@ -71,7 +71,7 @@ function InputBar(props) {
           className="mr-2"
         />
 
-        <Button variant="info" type="submit">
+        <Button variant="primary" type="submit">
           Add Todo
         </Button>
       </Row>

@@ -9,5 +9,16 @@
 .auth-form-container {
   min-width: 300px;
   max-width: 400px;
-  box-shadow: 6px 6px 10px #888888;
+  /* box-shadow: 6px 6px 10px #333333; */
+}
+
+.background {
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-image: url("../../img/landingpage-background.jpg");
+  background-size: cover;
+  background-color: grey;
+  filter: blur(10px);
 }

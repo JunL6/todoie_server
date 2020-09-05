@@ -6,13 +6,13 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "client": "npm run start --prefix client"
   },
   "engines": {
     "npm": "6.14.5",
     "node": "12.16.2"
   },
-  "h": "h",
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -25,7 +25,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.9.12",
-    "nodemon": "^2.0.3",
+    "nodemon": "^2.0.4",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "uuid": "^8.3.0"

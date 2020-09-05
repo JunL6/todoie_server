@@ -15,7 +15,8 @@ import { URL_FETCH_USER } from "../config/urls";
 let nextTodoId = 0;
 let nextGroupId = 1;
 
-let history = useHistory();
+// 暂时先注释掉，因为hook只能用在function component里
+// let history = useHistory();
 
 export function fetchUser() {
   return (dispatch) => {
@@ -25,7 +26,8 @@ export function fetchUser() {
         console.log(response);
         dispatch({ type: FETCH_USER, payload: response.data.username });
 
-        history.push("/app");
+        // 暂时先注释掉，因为hook只能用在function component里
+        // history.push("/app");
       })
       .catch((err) => console.error(err));
   };

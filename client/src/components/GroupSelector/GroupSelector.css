@@ -13,5 +13,8 @@
 }
 
 .item-selected {
-  background-color: black;
+  /* background-color: black; */
+  background-color: #0275d8;
+  color: black;
+  font-weight: bold;
 }
