@@ -3,6 +3,8 @@ import axios from "axios";
 import { InputGroup, FormControl, Button, Form, Row } from "react-bootstrap";
 import { SelectedGroupContext } from "./SelectedGroupContext";
 
+const inputBarCSS = { width: "10px" };
+
 function InputBar(props) {
   // constructor(props) {
   //   super(props);
@@ -49,32 +51,17 @@ function InputBar(props) {
   }
 
   return (
-    // <form onSubmit={onSubmit}>
-    //   <input
-    //     className=""
-    //     type="text"
-    //     placeholder="Enter text"
-    //     onChange={onInputChange}
-    //     value={input}
-    //   />
-    //   <button className="btn btn-primary" type="submit">
-    //     Add
-    //   </button>
-    // </form>
-    <Form onSubmit={onSubmit} className="mb-3">
-      <Row>
-        <FormControl
-          type="text"
-          value={input}
-          onChange={onInputChange}
-          style={{ width: "300px" }}
-          className="mr-2"
-        />
-
-        <Button variant="primary" type="submit">
-          Add Todo
-        </Button>
-      </Row>
+    <Form inline onSubmit={onSubmit} className="mb-3">
+      <FormControl
+        type="text"
+        value={input}
+        onChange={onInputChange}
+        className="mr-2 flex-grow-1"
+        style={inputBarCSS}
+      />
+      <Button variant="primary" type="submit">
+        Add Todo
+      </Button>
     </Form>
   );
 }

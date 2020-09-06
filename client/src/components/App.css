@@ -27,17 +27,13 @@ body {
 }
 
 .middle-lane {
-  flex-grow: 2;
+  margin: auto;
+  flex-grow: 1;
   height: 100vh;
-  min-width: 600px;
-  /* background-color: yellow; */
-  margin: 0;
+  max-width: 400px;
   padding: 60px 0 0 0;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-content: flex-end;
-  align-items: center;
 }
 
 /* Group Selector */
@@ -158,67 +154,12 @@ body {
 */
 
 /** 
-  Input Bar
-**/
-
-.input-bar {
-  padding: 0;
-  width: 400px;
-  background-color: #1e1e1d;
-  border-radius: 10px;
-  margin: 20px 0px 60px 0;
-  border: none;
-}
-
-.input-bar input {
-  /* background-color: #1e1e1d; */
-  background-color: #171d3e;
-  border: none;
-  border-radius: 10px;
-  width: 280px;
-  height: 50px;
-  padding: 0 20px;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.input-bar input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.input-bar input:focus {
-  outline: none;
-  caret-color: rgba(100, 243, 4, 0.767);
-}
-
-.input-bar button {
-  height: 50px;
-  width: 80px;
-  color: #171d3e;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  padding: 0;
-  transform: scale(1.02);
-  box-shadow: 6px 0 4px rgba(26, 25, 25, 0.1);
-  /* background-color: rgba(230, 4, 218, 0.596); */
-}
-
-.input-bar button:hover {
-  cursor: pointer;
-  /* transform: scale(1.2); */
-}
-
-.input-bar button:active {
-  /* transform: scale(1); */
-}
-
-/** 
 status toggle
 **/
 
 .status-toggle {
+  display: flex;
+  justify-content: space-around;
   border-bottom: 1.2px solid #0f235b;
   border-left: none;
   border-right: none;
@@ -227,8 +168,9 @@ status toggle
 
 .status-toggle button {
   border: none;
-  width: 120px;
-  height: 40px;
+  /* width: 120px;
+  height: 40px; */
+  padding: 5px 36px;
   border-radius: 16px;
   transition-timing-function: ease-in-out;
   font-size: medium;
@@ -264,10 +206,7 @@ status toggle
 /* TodoList */
 
 .todo-list {
-  min-width: 20px;
-  width: 400px;
   max-width: 400px;
-  /* box-shadow: 6px 4px 10px 4px rgba(94, 87, 89, 0.1); */
 }
 
 .todo-list ul {

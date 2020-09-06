@@ -16,7 +16,7 @@ export default function Main(props) {
 
   // ${count} is used to
   const [count, setCount] = useState(0);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     axios.get(URL_GETUSERDATA).then((response) => {
