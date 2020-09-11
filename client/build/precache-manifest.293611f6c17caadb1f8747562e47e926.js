@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5959896da32affacba6efe84cf5a2629",
+    "revision": "2db0581296b50605ce7e06df2ffd03a7",
     "url": "/index.html"
   },
   {
-    "revision": "e5aa05524d232acfc5f0",
-    "url": "/static/css/main.b0efa8ef.chunk.css"
+    "revision": "2fd616fbac2b8420f1de",
+    "url": "/static/css/main.7f59c74a.chunk.css"
   },
   {
     "revision": "e49e568e4351a3157b24",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.73b18dc9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5aa05524d232acfc5f0",
+    "revision": "2fd616fbac2b8420f1de",
     "url": "/static/js/main.e7b8c2fb.chunk.js"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Todoie_logo.6a235456.svg"
   },
   {
-    "revision": "cb7b7a58ebb9271c1132e116a6b43766",
-    "url": "/static/media/landingpage-background.cb7b7a58.jpg"
+    "revision": "c8cb555605ba8e13eea88f37ffe6c426",
+    "url": "/static/media/bg-min.c8cb5556.jpg"
   },
   {
     "revision": "183dc3a68eeb7183715704b612a0fdea",
