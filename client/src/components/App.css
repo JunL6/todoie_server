@@ -160,7 +160,7 @@ status toggle
 .status-toggle {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1.2px solid #0f235b;
+  /* border-bottom: 1.2px solid #0f235b; */
   border-left: none;
   border-right: none;
   margin-bottom: 8px;
@@ -197,7 +197,7 @@ status toggle
 }
 
 .status-toggle_button--selected {
-  box-shadow: 6px 4px 10px 4px rgba(94, 87, 89, 0.1);
+  box-shadow: 0px 8px 20px 1px rgba(26, 25, 25, 0.1);
   /* background-color: #0f235b; */
   background-color: #6f7a83;
   color: white;
@@ -215,7 +215,7 @@ status toggle
   list-style-type: none;
   margin: 0;
   padding: 0;
-  box-shadow: 6px 4px 10px 4px rgba(26, 25, 25, 0.1);
+  box-shadow: 0px 8px 20px 1px rgba(26, 25, 25, 0.1);
 }
 
 .todo-list li {
